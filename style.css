@@ -1,0 +1,352 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #f8f8f8;
+    padding: 10px 0;
+    position: relative;
+}
+
+header .dashboard-img {
+    width: 100%;
+    height: auto;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+nav .logo {
+    width: 100px;
+    height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+
+    border-radius: 10px;
+    padding: 10px;
+}
+nav ul li a:hover{
+    background-color: yellow;
+    color: blue;
+
+}
+
+/* About Section */
+#about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+/* About Logo */
+.about-logo {
+    max-width: auto;
+    height: 10rem;
+    margin-right: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover Effect on Logo */
+.about-logo:hover {
+    transform: scale(1.05);
+}
+
+/* About Text Container */
+.about-text-in {
+    max-width: 800px;
+}
+
+/* About Heading */
+.about-text-in h1 {
+    font-size: 2.5em;
+    color: #2a2185;
+    margin-bottom: 20px;
+    font-family: 'Arial', sans-serif;
+    letter-spacing: 1px;
+}
+
+/* About Paragraph */
+.about-text-in p {
+    font-size: 1.1em;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    font-family: 'Helvetica', sans-serif;
+}
+
+/* About List */
+.about-text-in ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+.about-text-in ul li {
+    font-size: 1.1em;
+    color: #333;
+    margin-bottom: 10px;
+    font-family: 'Helvetica', sans-serif;
+}
+
+
+
+#contact {
+    padding: 50px 20px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+/* Contact Section Heading */
+#contact h2 {
+    font-size: 2.5em;
+    color: #2a2185;
+    margin-bottom: 40px;
+    font-family: 'Arial', sans-serif;
+    letter-spacing: 1px;
+}
+
+/* Contact Container */
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+/* Contact Box */
+.contact-box {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    flex: 1 1 250px;
+    min-width: 250px;
+    max-width: 350px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover Effect on Contact Box */
+.contact-box:hover {
+    transform: translateY(-10px);
+}
+
+/* Contact Box Heading */
+.contact-box h3 {
+    font-size: 1.5em;
+    color: #2a2185;
+    margin-bottom: 15px;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Contact Box Paragraph */
+.contact-box p {
+    font-size: 1.1em;
+    color: #555;
+    line-height: 1.6;
+    font-family: 'Helvetica', sans-serif;
+}
+
+/* Contact Box Map */
+.contact-box iframe {
+    border-radius: 10px;
+    border: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+iframe {
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    height: 200px;
+}
+
+footer{
+    text-align: center;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .contact-box {
+        max-width: 100%;
+    }
+}
+
+
+
+
+
+  
+  /* Dropdown button */
+  .dropdown .dropbtn {
+    font-size: 16px;
+    font-weight: bolder;
+    border: none;
+    outline: none;
+    color: black;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+    border-radius: 10px;
+}
+  
+  /* Add a red background color to navbar links on hover */
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: yellow;
+    color: blue;
+  }
+  
+  /* Dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  /* Add a grey background color to dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .Navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  /* Carousel Container */
+.carousel {
+    position: relative;
+    max-width: 75%;
+    margin: auto   ;
+    margin-top: 30px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Images */
+.carousel-images img {
+    width: 100%;
+    display: none;
+    border-radius: 10px;
+}
+
+/* Carousel Controls */
+.carousel-controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+.carousel-controls .prev,
+.carousel-controls .next {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    cursor: pointer;
+    pointer-events: all;
+    border-radius: 50%;
+    user-select: none;
+}
+
+/* Carousel Indicators */
+.carousel-indicators {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 8px;
+}
+
+.carousel-indicators .dot {
+    height: 15px;
+    width: 15px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.carousel-indicators .dot.active {
+    background-color: #717171;
+}
+
+/* Additional Styling for Responsiveness */
+@media (max-width: 768px) {
+    .carousel-controls .prev,
+    .carousel-controls .next {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .carousel-indicators .dot {
+        height: 12px;
+        width: 12px;
+    }
+}

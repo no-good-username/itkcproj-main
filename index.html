@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITKC - Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="https://www.goa.gov.in/department/info-tech-corporation-of-goa-ltd/"><img src="./itglogo.png" alt="Dashboard Image" class="dashboard-img"></a>
+        <nav>
+            <a href="https://itkc.goa.gov.in/"><img src="./itkclogo.png" alt="Logo" class="logo"></a>
+            <ul class="Navbar">
+                <li><div class="dropdown">
+                    <button class="dropbtn">Login
+                      <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                      <a href="admin.html">Admin Login</a>
+                      <a href="supervisor.html">Supervisor Login</a>
+                    </div></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="coursestable.html">Courses</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Carousel Section -->
+        <section class="carousel">
+            <div class="carousel-images">
+                <img src="./home.jpeg" alt="Image 1">
+                <img src="./home2.jpeg" alt="Image 2">
+                <img src="./home3.jpg" alt="Image 3">
+            </div>
+            
+            <div class="carousel-indicators">
+                <span class="dot" data-slide="1"></span>
+                <span class="dot" data-slide="2"></span>
+                <span class="dot" data-slide="3"></span>
+            </div>
+        </section>
+
+        <section id="about">
+            <img src="./itkclogo2.png" alt="Logo" class="about-logo">
+            <div class="about-text-in">
+                <h1>IT Knowledge Center</h1>
+                <p>To empower individuals and communities through enhanced access to information, education, and communication facilities. The centers provide job-oriented IT training to local youth. IT training shall be imparted in two categories:</p>
+                <ul>
+                    <li>General students.</li>
+                    <li>Free training to SC/ST students under the scheme.</li>
+                    <li>Free training to students from areas affected by mining belt.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <div class="contact-container">
+                <div class="contact-box">
+                    <h3>Our Address</h3>
+                    <p>3rd Floor, IT Hub, Altinho, Panaji - Goa</p>
+                </div>
+                <div class="contact-box">
+                    <h3>Email Us</h3>
+                    <p>md-itg.goa@nic.in</p>
+                </div>
+                <div class="contact-box">
+                    <h3>Call Us</h3>
+                    <p>+91 (832) 2226024<br>+91 (832) 2225192</p>
+                </div>
+                <div class="contact-box">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3844.9361520246025!2d73.8260928745889!3d15.487866154740098!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbfc1e4d2cca507%3A0xf163d693087b8de3!2sInfotech%20Corporation%20of%20Goa%20Ltd.!5e0!3m2!1sen!2sin!4v1722245886989!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 IT Knowledge Centre. All rights reserved.</p>
+    </footer>
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let slides = document.querySelectorAll('.carousel-images img');
+            let dots = document.querySelectorAll('.dot');
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1; }
+            for (let i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 3000); // Change image every 3 seconds
+        }
+
+        document.querySelector('.prev').addEventListener('click', () => {
+            slideIndex -= 2;
+            showSlides();
+        });
+
+        document.querySelector('.next').addEventListener('click', showSlides);
+    </script>
+</body>
+</html>

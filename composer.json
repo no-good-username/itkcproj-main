@@ -1,0 +1,16 @@
+{
+    "name": "rajrfal/itkcproj",
+    "description": "A survey management system for ITKC project.",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "raj",
+            "email": "rajfaldessai2412@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "dompdf/dompdf": "^3.0"
+    }
+}
